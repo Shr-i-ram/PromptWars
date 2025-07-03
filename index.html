@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Darth Jar Jar - DM Conversion</title>
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script defer src="/static/app.js"></script>
+      <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+      <style>
+        body {
+          font-family: 'Orbitron', sans-serif;
+          background: black url('https://media.giphy.com/media/3o7TKP9FmvZUUZXcVy/giphy.gif') repeat;
+          background-size: cover;
+          color: #e0e0e0;
+        }
+        #sidebar li {
+          transition: all 0.3s ease;
+        }
+        #sidebar li.resisting {
+          border-left: 6px solid #3b82f6;
+          box-shadow: 0 0 8px #3b82f6aa;
+        }
+        #sidebar li.turned {
+          border-left: 6px solid #dc2626;
+          box-shadow: 0 0 12px #dc2626aa;
+        }
+        #chat-header {
+          font-size: 1.5rem;
+          border-bottom: 2px solid #3b82f6;
+        }
+        #chat-window {
+          background-image: url('https://wallpapercat.com/w/full/3/1/f/465917-3840x2160-desktop-4k-sith-wallpaper.jpg');
+        }
+
+        #chat-window div {
+          transition: all 0.3s ease;
+        }
+        #chat-window div.turned-text {
+          color: #ff4b5c;
+          text-shadow: 0 0 5px #ff4b5c;
+        }
+        *{
+            cursor: url('https://cur.cursors-4u.net/games/gam-13/gam1261.cur'), auto;
+          }
+      .holo-text {
+        color: #3b82f6;
+        text-shadow:
+          0 0 5px #3b82f6,
+          0 0 10px #3b82f6,
+          0 0 20px #3b82f6;
+        animation: flicker 1.5s infinite alternate;
+      }
+
+      @keyframes flicker {
+        0% { opacity: 0.9; text-shadow: 0 0 5px #3b82f6; }
+        100% { opacity: 1; text-shadow: 0 0 8px #3b82f6, 0 0 15px #3b82f6; }
+      }
+
+      #lightsaber {
+        position: fixed;
+        top: 50%;
+        left: -100%;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(to right, #ff0000, #ff5555, #ff0000);
+        box-shadow: 0 0 15px #ff0000;
+        transform: translateY(-50%);
+        z-index: 9999;
+        transition: left 0.3s ease;
+      }
+          #intro {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: black;
+            z-index: 10000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+          }
+          #crawl {
+            color: yellow;
+            font-size: 2em;
+            text-align: center;
+            transform-origin: bottom center;
+            animation: crawl 20s linear forwards;
+          }
+          @keyframes crawl {
+            0% { transform: rotateX(20deg) translateY(100%); }
+            100% { transform: rotateX(25deg) translateY(-300%); }
+          }
+          .turned-text {
+            color: #ff4b5c;
+            text-shadow: 0 0 5px #ff4b5c, 0 0 10px #ff4b5c;
+            animation: glitch 0.3s infinite;
+          }
+
+          @keyframes glitch {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(-1px); }
+            40% { transform: translateX(1px); }
+            60% { transform: translateX(-2px); }
+            80% { transform: translateX(2px); }
+            100% { transform: translateX(0); }
+          }
+          @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+          }
+          .typing-effect {
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: .15em solid #3b82f6;
+            animation: typing 2s steps(30, end);
+          }
+
+
+      </style>
+    </head>
+<body class="bg-gray-900 text-white">
+    <div id="lightsaber"></div>
+    <div id="intro">
+      <div id="crawl">
+        <p>STAR WARS</p>
+        <p>Episode VII: Darth Jar Jar</p>
+        <p>
+          The galaxy is in turmoil. Darth Jar Jar Binks has captured six Jedi Masters,
+          seeking to lure them to the dark side through cunning words alone...<br><br>Can he do it?<br>
+            <br>Can...you do it?
+        </p>
+      </div>
+    </div>
+
+<div class="flex h-screen">
+    <!-- Sidebar -->
+    <div class="w-1/4 bg-gray-800 p-4 overflow-y-auto" id="sidebar">
+        <h2 class="text-xl font-bold mb-4">Captured Jedi</h2>
+        <ul id="jedi-list">
+            <!-- Populated by JS -->
+        </ul>
+    </div>
+
+    <!-- Chat window -->
+    <div class="flex-1 flex flex-col">
+        <div id="chat-header" class="p-4 bg-gray-700 text-lg font-semibold">Select a Jedi</div>
+        <div id="chat-window" class="flex-1 p-4 overflow-y-auto space-y-2"></div>
+        <div class="p-4 bg-gray-800 flex">
+            <input id="user-input" class="flex-1 p-2 rounded bg-gray-700 border border-gray-600 mr-2" placeholder="Type your dark temptations...">
+            <button id="send-btn" class="px-4 py-2 bg-red-600 rounded hover:bg-red-700">Send</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
