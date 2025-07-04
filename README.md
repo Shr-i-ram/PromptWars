@@ -5,15 +5,79 @@ For more Info : https://youtu.be/8b_kj_Pkww8
 <br>
 <br><br>
 <b>💡 Concept</b><br>
-This is a Star Wars–themed interactive web game, where you play as Darth Jar Jar Binks, a secret Sith Lord.
-Your mission:
+A Star Wars–themed interactive AI game, where you become Darth Jar Jar Binks, a secret Sith Lord, who has captured 6 Jedi Masters.
+Your mission is to convince each Jedi to join the dark side through clever text manipulation.
 
-Corrupt 6 captured Jedi through text conversations and lure them to the dark side.
+The game uses Generative AI to bring each Jedi’s personality to life — from Yoda’s cryptic riddles to Ahsoka’s fierce loyalty — making it extremely challenging to corrupt them.
+As the story unfolds:
 
-Each Jedi is powered by an LLM personality (Gemini) that embodies their unique character traits — from Yoda’s cryptic wisdom to Ahsoka’s fierce independence.
-It’s designed to be extremely hard to convince them, requiring clever manipulation.
+Dynamic events like Sith fleets attacking Jedi temples influence Jedi responses.
+
+The UI transforms as Jedi turn, spreading Sith influence across the galaxy.
+
+Once you corrupt them all, a final celebration shows the Sith triumphing over the galaxy.
 <br><br><br>
 
+<b>⚙️ Tech stack used</b>
+
+
+✅ Backend:
+
+Python (Flask) web server
+
+Google Generative AI (Gemini) for Jedi conversational personalities
+
+✅ Frontend:
+
+HTML, Tailwind CSS, Vanilla JavaScript
+
+Dynamic interactive UI with lightsaber and Star Wars holographic styles
+
+✅ Deployment:
+
+Designed to run on Replit or any Python web server
+<br><br><br>
+<b>🚀 Our chosen hackathon track</b><br>
+🎯 Track:
+
+AI / ML
+because we focus on generative conversational AI personalities that adapt to context, resist persuasion, and slowly reveal weaknesses over time.
+
+(We also showcase a multi-agent AI scenario, with each Jedi maintaining its own evolving personality state.)
+
+<br><br><br>
+<b>💡 The problem you’re solving</b>
+
+
+This is a fun & unique demonstration of multi-threaded conversational AI, showing how LLMs can:
+
+maintain individual personality profiles,
+
+update internal “world state” (like galaxy events),
+
+and create emergent storytelling.
+
+It also demonstrates how to build rich narrative experiences powered by generative AI, with each decision or conversation shaping the outcome.
+
+In broader terms, it serves as a prototype for future narrative AI gaming engines, where:
+
+NPCs evolve individually,
+
+remember conversations,
+
+and respond to global events.
+<br><br><br>
+<b>🥇 List of hackathon challenges or bounties completed</b><br>
+
+1.Colour Theme - Successfuly completed
+
+2.Easter Egg - Success
+
+3.Reimagined a Scene - Success? That's chosen by the MASTERs
+
+4.3D - 3D parallax has been added in the geoguessr
+
+<br><br><br>
 <b>🔥 Gameplay Mechanics</b><br>
 Simulates a Dark Side Direct Messaging interface, with each Jedi in a separate DM thread.
 
