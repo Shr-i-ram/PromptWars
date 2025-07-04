@@ -1,0 +1,82 @@
+[
+  {
+    "planet": "Tatooine",
+    "hint": "A desert world with twin suns.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/76/Chott_el_Gharsa.jpg",
+    "real_location": "Chott el Gharsa, Tunisia",
+    "lat": 33.8833,
+    "lng": 7.8667
+  },
+  {
+    "planet": "Hoth",
+    "hint": "An icy and barren planet, base of the Rebellion.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Hardangervidda.jpg",
+    "real_location": "Hardangerjøkulen Glacier, Norway",
+    "lat": 60.5833,
+    "lng": 7.4333
+  },
+  {
+    "planet": "Endor",
+    "hint": "A forest moon inhabited by Ewoks.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/29/Redwood_National_Park_forest_trail.jpg",
+    "real_location": "Redwood National Park, California, USA",
+    "lat": 41.2132,
+    "lng": -124.0046
+  },
+  {
+    "planet": "Naboo",
+    "hint": "A peaceful world of lakes and meadows.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Lake_Como.jpg",
+    "real_location": "Lake Como, Italy",
+    "lat": 45.9900,
+    "lng": 9.2572
+  },
+  {
+    "planet": "Ahch-To",
+    "hint": "An oceanic planet home to the first Jedi Temple.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6d/SkelligMichaelPanorama.jpg",
+    "real_location": "Skellig Michael, Ireland",
+    "lat": 51.7710,
+    "lng": -10.5406
+  },
+  {
+    "planet": "Jakku",
+    "hint": "A desert planet scavenged for old war relics.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Wadi_Rum.jpg",
+    "real_location": "Wadi Rum, Jordan",
+    "lat": 29.5328,
+    "lng": 35.4194
+  },
+  {
+    "planet": "Mustafar",
+    "hint": "A lava-filled planet of fire and pain.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Mount_Etna_lava_flow.jpg",
+    "real_location": "Mount Etna, Italy",
+    "lat": 37.7550,
+    "lng": 14.9950
+  },
+  {
+    "planet": "Alderaan",
+    "hint": "Once a beautiful world, destroyed by the Death Star.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Swiss_alps.jpg",
+    "real_location": "Swiss Alps",
+    "lat": 46.8182,
+    "lng": 8.2275
+  },
+  {
+    "planet": "Coruscant",
+    "hint": "The capital of the galaxy, covered entirely by cityscape.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Times_Square_%2812210662793%29.jpg",
+    "real_location": "Times Square, NYC, USA",
+    "lat": 40.7580,
+    "lng": -73.9855
+  },
+  {
+    "planet": "Dagobah",
+    "hint": "A swamp-covered planet, Yoda's refuge.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Okefenokee_Swamp.jpg",
+    "real_location": "Okefenokee Swamp, Georgia, USA",
+    "lat": 30.7500,
+    "lng": -82.3167
+  }
+]
