@@ -1,7 +1,7 @@
 # “Darth Jar Jar - The Sith Temptation”
 The Product of Team 'Sith Lords' from the Hackathon 'Prompt Wars' hosted by VIT's Android Club.
 
-For more Info : https://youtu.be/8b_kj_Pkww8
+For more Info : [https://youtu.be/8b_kj_Pkww8](https://youtu.be/vZ8yP5njMdI)
 <br>
 <br><br>
 <b>💡 Concept</b><br>
